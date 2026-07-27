@@ -1,0 +1,1 @@
+import{r as e}from"./index-yjmL9u7y.js";var t=e();function n({eyebrow:e,title:n,children:r}){return(0,t.jsxs)(`div`,{className:`section-intro`,children:[(0,t.jsx)(`p`,{className:`eyebrow`,children:e}),(0,t.jsx)(`h1`,{children:n}),(0,t.jsx)(`p`,{className:`lead`,children:r})]})}export{n as t};
