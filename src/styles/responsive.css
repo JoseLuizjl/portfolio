@@ -1,0 +1,544 @@
+@media (max-width: 920px) {
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  button,
+  span,
+  strong,
+  small,
+  li {
+    overflow-wrap: anywhere;
+  }
+
+  .site-header {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+
+  .main-nav {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .main-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main-nav a {
+    flex: 0 0 auto;
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .page-view {
+    padding-top: 0;
+  }
+
+  .hero-section,
+  .profile-hero-card,
+  .profile-layout,
+  .timeline,
+  .about-section,
+  .contact-layout,
+  .profile-two-column,
+  .featured-project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-hero-card {
+    text-align: center;
+    justify-items: center;
+  }
+
+  .profile-page {
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .profile-tags {
+    justify-content: center;
+  }
+
+  .profile-skill-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: 72px 0 46px;
+  }
+
+  .hero-visual {
+    min-height: 440px;
+  }
+
+  .summary-band,
+  .skill-grid,
+  .project-grid,
+  .contact-grid,
+  .tech-grid,
+  .certification-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-page .section-intro,
+  .contact-page .section-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-page .section-intro .lead,
+  .contact-page .section-intro .lead {
+    grid-column: auto;
+    grid-row: auto;
+    margin-top: 24px;
+  }
+
+  .projects-page .section-intro .lead,
+  .contact-page .section-intro .lead {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-timeline {
+    gap: 28px;
+    padding-left: 24px;
+  }
+
+  .experience-timeline::before {
+    left: 8px;
+  }
+
+  .experience-item,
+  .experience-item:nth-child(odd),
+  .experience-item:nth-child(even) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .experience-item::before {
+    left: -16px;
+  }
+
+  .experience-item:nth-child(odd) .experience-card,
+  .experience-item:nth-child(even) .experience-card,
+  .experience-item:nth-child(odd) time,
+  .experience-item:nth-child(even) time {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .experience-item:nth-child(even) time {
+    grid-row: auto;
+  }
+
+  .tech-card,
+  .tech-card:nth-child(2),
+  .tech-card:nth-child(5),
+  .tech-card:nth-child(6) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .summary-band {
+    display: grid;
+  }
+
+  .profile-page {
+    padding-top: 34px;
+  }
+
+  .about-section,
+  .tech-section,
+  .featured-projects-section,
+  .experience-section {
+    padding-top: 64px;
+  }
+
+  .about-more-action {
+    padding-top: 28px;
+  }
+}
+
+@media (max-width: 620px) {
+  .site-header {
+    min-height: auto;
+    padding: 12px 14px 10px;
+    gap: 8px 10px;
+  }
+
+  .brand {
+    max-width: calc(100% - 96px);
+    font-size: 1rem;
+  }
+
+  .header-actions {
+    margin-left: auto;
+  }
+
+  .language-toggle,
+  .theme-toggle {
+    width: 38px;
+    height: 38px;
+    min-height: 38px;
+  }
+
+  .page-view {
+    width: min(100% - 24px, 1160px);
+    padding-bottom: 48px;
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 28px 14px;
+  }
+
+  .main-nav {
+    gap: 6px;
+    padding: 2px 0 4px;
+  }
+
+  .main-nav a + a::before {
+    display: none;
+  }
+
+  .main-nav a {
+    min-height: 36px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0 12px;
+    background: color-mix(in srgb, var(--surface) 78%, transparent);
+    font-size: 0.86rem;
+  }
+
+  .main-nav a.active {
+    border-color: var(--border-strong);
+    background: var(--surface);
+  }
+
+  .main-nav a::after {
+    left: 12px;
+    right: 12px;
+    bottom: 5px;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    line-height: 1.08;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+    line-height: 1.58;
+  }
+
+  .hero-section {
+    gap: 24px;
+    padding: 54px 0 38px;
+  }
+
+  .profile-photo-placeholder {
+    width: min(62vw, 210px);
+    border-width: 4px;
+  }
+
+  .hero-subtitle {
+    line-height: 1.36;
+  }
+
+  .hero-actions {
+    display: grid;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .hero-actions a {
+    width: 100%;
+    min-height: 48px;
+    padding-inline: 18px;
+  }
+
+  .hero-visual {
+    min-height: 360px;
+    gap: 14px;
+    padding: 22px 0;
+  }
+
+  .hero-visual::before {
+    inset: 18px;
+  }
+
+  .hero-visual img {
+    width: 190px;
+  }
+
+  .visual-card {
+    position: relative;
+    inset: auto;
+    width: calc(100% - 44px);
+  }
+
+  .summary-band,
+  .profile-panel,
+  .skill-card,
+  .course-section,
+  .project-card,
+  .contact-card,
+  .education-block,
+  .tech-card,
+  .contact-aside-heading,
+  .contact-form-card,
+  .featured-project-card,
+  .experience-card,
+  .profile-section-card {
+    padding: 20px;
+  }
+
+  .profile-page {
+    width: min(100% - 24px, 1160px);
+    gap: 28px;
+    padding-top: 28px;
+  }
+
+  .profile-hero-card {
+    gap: 22px;
+    padding: 20px 0 34px;
+  }
+
+  .profile-hero-copy h1 {
+    font-size: 2.18rem;
+  }
+
+  .profile-hero-copy p {
+    font-size: 1rem;
+  }
+
+  .profile-avatar-frame {
+    width: min(56vw, 168px);
+    border-width: 4px;
+  }
+
+  .profile-title-row {
+    gap: 10px;
+  }
+
+  .profile-heading-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .profile-heading-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .profile-skill-card,
+  .certification-card {
+    align-items: start;
+  }
+
+  .certification-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-band article {
+    padding-inline: 14px 0;
+  }
+
+  .profile-skill-grid,
+  .profile-work-item {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-work-item time {
+    justify-self: start;
+  }
+
+  .education-main {
+    display: grid;
+  }
+
+  .education-main time {
+    white-space: normal;
+  }
+
+  .project-image-placeholder {
+    aspect-ratio: auto;
+  }
+
+  .featured-project-content p {
+    line-height: 1.62;
+  }
+
+  .project-link,
+  .project-github-link,
+  .about-more-action a,
+  .contact-more-action a,
+  .contact-form button {
+    width: 100%;
+  }
+
+  .project-card {
+    min-height: auto;
+  }
+
+  .project-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .experience-timeline {
+    padding-left: 18px;
+  }
+
+  .experience-card ul {
+    gap: 9px;
+  }
+
+  .contact-page {
+    min-height: auto;
+    padding-top: 34px;
+  }
+
+  .projects-page {
+    padding-top: 36px;
+  }
+
+  .contact-card {
+    align-items: flex-start;
+  }
+
+  .contact-form-heading-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contact-channel-toggle {
+    width: 100%;
+  }
+
+  .contact-channel-toggle button {
+    flex: 1;
+  }
+
+  .contact-form-card {
+    padding: 20px;
+  }
+
+  .contact-form {
+    gap: 14px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+  .language-popover,
+  .resume-popover {
+    right: -44px;
+    width: min(190px, calc(100vw - 28px));
+  }
+
+  .resume-popover {
+    left: auto;
+    transform: none;
+  }
+
+  .scroll-top-button {
+    right: 14px;
+    bottom: 14px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 430px) {
+  .site-header {
+    padding-inline: 10px;
+  }
+
+  .brand {
+    max-width: calc(100% - 88px);
+    font-size: 0.94rem;
+  }
+
+  .page-view,
+  .profile-page {
+    width: min(100% - 18px, 1160px);
+  }
+
+  .main-nav a {
+    min-height: 34px;
+    padding-inline: 10px;
+    font-size: 0.82rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .profile-hero-copy h1 {
+    font-size: 1.9rem;
+  }
+
+  .summary-band,
+  .profile-panel,
+  .skill-card,
+  .course-section,
+  .project-card,
+  .contact-card,
+  .education-block,
+  .tech-card,
+  .contact-aside-heading,
+  .contact-form-card,
+  .featured-project-card,
+  .experience-card,
+  .profile-section-card {
+    padding: 16px;
+  }
+
+  .tech-list span,
+  .project-tech-list span,
+  .language-list span,
+  .tag-list span,
+  .education-tags span {
+    min-height: 30px;
+    padding-inline: 10px;
+    font-size: 0.8rem;
+  }
+
+  .contact-icon,
+  .certification-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .site-footer {
+    padding-inline: 10px;
+  }
+}
